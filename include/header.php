@@ -8,12 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,
         wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="..CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <title>Martin Coiffure</title>
 </head>
 
 <body>
-    <header>
+    <div class="menu">
         <div class="logo_container">
             <a href="index.php">
                 <img src="Images/logo_martin.png" alt="logo Martin Coiffure">
@@ -28,4 +28,4 @@
                 <li class="btn_nav"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
