@@ -438,16 +438,17 @@ a {
   height: 300px;
   background-color: #0C154B;
   color: var(--texte);
+  position: relative;
 }
 
 .chef_text_image {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 90%;
 }
 
 .chef_text {
-  width: 50%;
+  width: 65%;
   margin-top: 15px;
 }
 
@@ -475,12 +476,21 @@ a {
   font-weight: 500;
 }
 
-.chef_image {
-  width: 35%;
-}
-
 .chef_text_bas p{
-  font-size: 15pt;
+  font-size: 18pt;
   font-weight: 300;
   font-family: 'Poppins', sans-serif;
+}
+
+.chef_photo {
+  width: 30%;
+  position: absolute;
+  right: 0;
+  top: -50px;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.chef_photo img{
+ width: 350px; 
 }

@@ -235,6 +235,8 @@ include('include/header.php')
     </div>
 </div>
 <br>
+<br>
+<br>
 <div class="chef_rectangle">
     <div class="chef_text_image space">
         <div class="chef_text">
@@ -251,23 +253,23 @@ include('include/header.php')
                 </p>
             </div>
         </div>
-        <div class="chef_image">
+        <div class="chef_photo">
             <img src="Images/chef.webp" alt="">
         </div>
     </div>
 
 </div>
 
-
-
-
-
-
-
 <br>
 <br>
 <br>
 <br>
+
+
+
+
+
+
 Du texte Du texteDu texteDu texteDu texteDu texteDu texteDu texte
 
 <br>
