@@ -203,7 +203,8 @@ a {
   margin-top: 0;
 }
 
-.slide-text h1, .slide-text h3{
+.slide-text h1,
+.slide-text h3 {
   padding-right: 500px;
 }
 
@@ -215,13 +216,13 @@ a {
   height: 700px;
 }
 
-.nos_services_title{
+.nos_services_title {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.service_title{
+.service_title {
   color: var(--menu_color);
   font-size: 24pt;
   font-weight: 700;
@@ -231,7 +232,7 @@ a {
   text-transform: uppercase;
 }
 
-.form_bf_title::before{
+.form_bf_title::before {
   content: "";
   position: absolute;
   background-color: var(--font_menu_rect);
@@ -240,21 +241,20 @@ a {
   left: calc(0px);
 }
 
-.arrow img{
+.arrow img {
   width: 30px;
   height: 30px;
 }
 
-.all_services{
+.all_services {
   display: flex;
-  gap:30px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   padding-bottom: 20px;
   scrollbar-width: none;
 }
 
-.rectangle{
+.rectangle {
   width: 260px;
   height: 320px;
   background-size: cover;
@@ -265,24 +265,25 @@ a {
   justify-content: center;
 }
 
-.nos_services_item{
+.nos_services_item {
   display: flex;
+  gap: 30px;
 }
 
-.rect_img1{
+.rect_img1 {
   background-image: url(../Images/coiffure.webp);
 }
 
 .rectangle::before {
-  content: ""; 
-  position: absolute; 
+  content: "";
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
 
-.rectangle p{
+.rectangle p {
   color: white;
   position: absolute;
   bottom: 0;
@@ -293,54 +294,193 @@ a {
   text-align: center;
 }
 
-.rect_img1::before{
-  background: #0B0244; 
+.rect_img1::before {
+  background: #0B0244;
   opacity: 0.7;
 }
 
-.rect_img2::before{
-  background: #42024C; 
+.rect_img2::before {
+  background: #42024C;
   opacity: 0.7;
 }
 
-.rect_img3::before{
-  background: #183E00; 
+.rect_img3::before {
+  background: #183E00;
   opacity: 0.7;
 }
 
-.rect_img4::before{
-  background: #00414A; 
+.rect_img4::before {
+  background: #00414A;
   opacity: 0.7;
 }
 
-.rect_img5::before{
-  background: #867903; 
+.rect_img5::before {
+  background: #867903;
   opacity: 0.7;
 }
 
-.rect_img6::before{
-  background: #4A4A4A; 
+.rect_img6::before {
+  background: #4A4A4A;
   opacity: 0.7;
 }
 
-.rect_img2{
+.rect_img2 {
   background-image: url(../Images/slider_2.webp);
 }
 
-.rect_img3{
+.rect_img3 {
   background-image: url(../Images/decoration.webp);
 }
 
-.rect_img4{
+.rect_img4 {
   background-image: url(../Images/makeup.webp);
 }
 
-.rect_img5{
+.rect_img5 {
   background-image: url(../Images/manucure.png);
 }
 
-.rect_img6{
+.rect_img6 {
   background-image: url(../Images/coloration.jpg)
 }
 
+.realisation {
+  width: 260px;
+  height: 350px;
+  margin: 0;
+  position: relative;
+}
 
+.realisation_photo {
+  width: 100%;
+  height: 100%;
+}
+
+.realisation img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+}
+
+.rectangle_noir {
+  background-color: #000000;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 30px;
+}
+
+.rect_noir_text p {
+  color: white;
+  position: relative;
+  font-size: 14pt;
+  font-weight: 500;
+  text-align: center;
+}
+
+.slider_video {
+  width: 100%;
+  height: 400px;
+  background-image: url(../Images/slider_3.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  background-position: center;
+  z-index: 1;
+}
+
+.filter {
+  background-color: #000000;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slider_video_text {
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  font-size: 30pt;
+  font-weight: 500;
+  max-width: 500px;
+}
+
+.slider_video p {
+  color: #ffffff;
+}
+
+.slider_video_text img {
+  width: 70px;
+}
+
+.galerie {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  gap: 30px;
+}
+
+.galerie_photo img {
+  width: 260px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.chef_rectangle {
+  width: 100%;
+  height: 300px;
+  background-color: #0C154B;
+  color: var(--texte);
+}
+
+.chef_text_image {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.chef_text {
+  width: 50%;
+  margin-top: 15px;
+}
+
+.chef_text_grif_name {
+  display: flex;
+  align-items: center;
+}
+
+.chef_text_griffes {
+  background-color: white;
+  background-image: url(../Images/griffes.svg);
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 10px;
+}
+
+.chef_text_name {
+  color: white;
+  letter-spacing: 5px;
+  font-size: 25pt;
+  font-weight: 500;
+}
+
+.chef_image {
+  width: 35%;
+}
+
+.chef_text_bas p{
+  font-size: 15pt;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+}
