@@ -113,6 +113,16 @@ animateCSSOnScroll('.anni', 'fadeInUp', 'festive_effect', '2s', 'animate__', 100
     console.log('Animation terminée');
 });
 
+animateCSSOnScroll('.annii', 'fadeInUp', 'festive_effect', '2s', 'animate__', 100).then(() => {
+    // Action à effectuer après la fin de l'animation (facultatif)
+    console.log('Animation terminée');
+});
+
+animateCSSOnScroll('.anni2', 'fadeInUp', 'festive_effect', '2s', 'animate__', 100).then(() => {
+    // Action à effectuer après la fin de l'animation (facultatif)
+    console.log('Animation terminée');
+});
+
 // Utilisez la fonction animateCSSOnScroll avec une durée spécifiée (par exemple, '2s') pour animer la div avec la classe "user" et ajouter l'effet festif "festive_effect"
 animateCSSOnScroll('.tt', 'fadeInUp', 'festive_effect', '2s', 'animate__', 100).then(() => {
     // Action à effectuer après la fin de l'animation (facultatif)

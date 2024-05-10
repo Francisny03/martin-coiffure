@@ -239,21 +239,21 @@ include('include/header.php')
 <br>
 <div class="chef_rectangle">
     <div class="chef_text_image space">
-        <div class="chef_text">
-            <div class="annii chef_text_grif_name">
+        <div class="anni chef_text">
+            <div class="chef_text_grif_name">
                 <div class="chef_text_griffes"></div>
                 <div class="chef_text_name">Martin ITOUA</div>
             </div>
             <br>
             <br>
-            <div class="anni chef_text_bas">
+            <div class="chef_text_bas">
                 <p>La coiffure est notre passion, faire de votre instant coiffure un moment
                     de détente pour vous, une véritable pause, afin de vous rendre unique...
                     Nous vous souhaitons la bienvenue au Salon Martin Coiffure...
                 </p>
             </div>
         </div>
-        <div class="anni chef_photo">
+        <div class="annii chef_photo">
             <img src="Images/chef.webp" alt="">
         </div>
     </div>
@@ -266,7 +266,7 @@ include('include/header.php')
 <br>
 <!-- animate__animated animate__fadeInUp -->
 <div class="footer">
-    <div class="footer_items space anni">
+    <div class="footer_items space anni2">
         <div class="footer_item_left">
             <h4>Nous <span class="text_color">suivre</span></h4>
             <div class="footer_icons">
