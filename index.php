@@ -264,12 +264,12 @@ include('include/header.php')
 <br>
 <br>
 <br>
-
-<div class="animate__animated animate__fadeInUp footer">
+<!-- animate__animated animate__fadeInUp -->
+<div class="footer">
     <div class="footer_items space">
-        <div class="animate__animated animate__fadeInUp footer_item_left">
+        <div class="footer_item_left">
             <h4>Nous <span class="text_color">suivre</span></h4>
-            <div class="animate__animated animate__fadeInUp footer_icons">
+            <div class="footer_icons">
                 <div class="circle facebook">
                     <img src="Images/facebook.svg" alt="">
                 </div>
@@ -281,9 +281,9 @@ include('include/header.php')
                 </div>
             </div>
         </div>
-        <div class="animate__animated animate__fadeInUp footer_item_center">
+        <div class="footer_item_center">
             <h4>Nous <span class="text_color">Contacter</span></h4>
-            <div class="animate__animated animate__fadeInUp footer_icons_column">
+            <div class="footer_icons_column">
                 <div class="contacter">
                     <div class="circle call">
                         <img src="Images/call.svg" alt="">
