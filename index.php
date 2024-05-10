@@ -35,15 +35,15 @@ include('include/header.php')
 <br>
 <br>
 <div class="nos_services_bloc space">
-    <div class="animate__animated animate__fadeInUp nos_services_title arrow">
-        <p class="animate__animated animate__fadeInUp form_bf_title service_title space">
+    <div class=" nos_services_title arrow">
+        <p class=" form_bf_title service_title space">
             Nos services
         </p>
         <img src="Images/arrow.svg" alt="">
     </div>
     <br>
     <div class="all_services">
-        <div class="animate__animated animate__fadeInUp nos_services_item">
+        <div class=" nos_services_item">
             <div class="services">
                 <div class="rectangle rect_img1">
                     <p>
@@ -97,14 +97,14 @@ include('include/header.php')
 
 <div class="nos_services_bloc space">
     <div class="nos_services_title arrow">
-        <p class="animate__animated animate__fadeInUp form_bf_title service_title space">
+        <p class=" form_bf_title service_title space">
             Nos réalisations
         </p>
         <img src="Images/arrow.svg" alt="">
     </div>
     <br>
     <div class="all_services">
-        <div class="animate__animated animate__fadeInUp nos_services_item">
+        <div class=" nos_services_item">
             <div class="realisation">
                 <div class="realisation_photo">
                     <img src="Images/real1.webp" alt="">
@@ -184,16 +184,16 @@ include('include/header.php')
 <br>
 <br>
 
-<div class="animate__animated animate__fadeInUp nos_services_bloc space">
+<div class=" nos_services_bloc space">
     <div class="nos_services_title arrow">
-        <p class="animate__animated animate__fadeInUp form_bf_title service_title space">
+        <p class=" form_bf_title service_title space">
             Galerie
         </p>
         <img src="Images/arrow.svg" alt="">
     </div>
 </div>
 <br>
-<div class="animate__animated animate__fadeInUp slider_video">
+<div class=" slider_video">
     <div class="filter">
         <div class="slider_video_text">
             <p>Regarder nos vidéos sur notre chaîne Youtube</p>
@@ -203,7 +203,7 @@ include('include/header.php')
 </div>
 <br>
 
-<div class="animate__animated animate__fadeInUp galerie space">
+<div class=" galerie space">
     <div class="galerie_photo">
         <img src="Images/real1.webp" alt="">
     </div>
@@ -227,9 +227,9 @@ include('include/header.php')
 <br>
 <br>
 
-<div class="animate__animated animate__fadeInUp nos_services_bloc space">
+<div class="nos_services_bloc space">
     <div class="nos_services_title arrow">
-        <p class="animate__animated animate__fadeInUp form_bf_title service_title space">
+        <p class=" form_bf_title service_title space">
             Mot du chef
         </p>
     </div>
@@ -238,8 +238,8 @@ include('include/header.php')
 <br>
 <br>
 <div class="chef_rectangle">
-    <div class="chef_text_image space">
-        <div class="anni chef_text">
+    <div class="wow fadeInUp chef_text_image space">
+        <div class="wow fadeInUp chef_text">
             <div class="chef_text_grif_name">
                 <div class="chef_text_griffes"></div>
                 <div class="chef_text_name">Martin ITOUA</div>
@@ -253,7 +253,7 @@ include('include/header.php')
                 </p>
             </div>
         </div>
-        <div class="annii chef_photo">
+        <div class="chef_photo">
             <img src="Images/chef.webp" alt="">
         </div>
     </div>
@@ -264,9 +264,9 @@ include('include/header.php')
 <br>
 <br>
 <br>
-<!-- animate__animated animate__fadeInUp -->
+<!--  -->
 <div class="footer">
-    <div class="footer_items space anni2">
+    <div class="footer_items space">
         <div class="footer_item_left">
             <h4>Nous <span class="text_color">suivre</span></h4>
             <div class="footer_icons">
@@ -281,7 +281,7 @@ include('include/header.php')
                 </div>
             </div>
         </div>
-        <div class="footer_item_center anni">
+        <div class="footer_item_center">
             <h4>Nous <span class="text_color">Contacter</span></h4>
             <div class="footer_icons_column">
                 <div class="contacter">
@@ -306,7 +306,7 @@ include('include/header.php')
 
         <div class="footer_item_right">
             <h4>Nous <span class="text_color">Contacter</span></h4>
-            <div class="anni footer_icons_column">
+            <div class="footer_icons_column">
                 <div class="contacter">
                     <div class="circle placeholder">
                         <img src="Images/placeholder.svg" alt="">
@@ -322,11 +322,11 @@ include('include/header.php')
     </div>
 </div>
 
-<div class="anni copyright_powered space">
+<div class="copyright_powered space">
     <div class=" copyright">
         <p>Copyright © 2023 martin COIFFURE</p>
     </div>
-    <div class=" powered">
+    <div class="powered">
         <p>Développé par Rêveurs professionnels & yashinka</p>
     </div>
 </div>
