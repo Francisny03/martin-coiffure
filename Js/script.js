@@ -33,3 +33,36 @@ $(document).ready(function () {
         ]
     });
 });
+
+
+
+// Fonction pour vérifier si un élément est visible dans la fenêtre du navigateur
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Fonction pour ajouter la classe d'animation lorsqu'un élément est visible
+function animateIfVisible() {
+    var elements = document.querySelectorAll('.animate__fadeInUp');
+    elements.forEach(function(element) {
+        if (isElementInViewport(element)) {
+            element.classList.add('animate__fadeInUp');
+        }
+    });
+}
+
+// Événement de défilement pour vérifier à nouveau lors du défilement
+window.addEventListener('scroll', function() {
+    animateIfVisible();
+});
+
+// Vérifier au chargement initial
+animateIfVisible();
+
+  
