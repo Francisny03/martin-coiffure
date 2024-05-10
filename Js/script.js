@@ -108,13 +108,13 @@ const animateCSSOnScroll = (element, animation, festiveClass, duration = '11s', 
     });
 
 // Utilisez la fonction animateCSSOnScroll avec une durée spécifiée (par exemple, '2s') pour animer la div avec la classe "bg_rose" et ajouter l'effet festif "festive_effect"
-animateCSSOnScroll('.footer_items', 'fadeInUp', 'festive_effect', '2s', 'animate__', 100).then(() => {
+animateCSSOnScroll('.anni', 'fadeInUp', 'festive_effect', '2s', 'animate__', 100).then(() => {
     // Action à effectuer après la fin de l'animation (facultatif)
     console.log('Animation terminée');
 });
 
 // Utilisez la fonction animateCSSOnScroll avec une durée spécifiée (par exemple, '2s') pour animer la div avec la classe "user" et ajouter l'effet festif "festive_effect"
-animateCSSOnScroll('.footer_item_center', 'fadeInUp', 'festive_effect', '2s', 'animate__', 100).then(() => {
+animateCSSOnScroll('.tt', 'fadeInUp', 'festive_effect', '2s', 'animate__', 100).then(() => {
     // Action à effectuer après la fin de l'animation (facultatif)
     console.log('Animation terminée');
 });

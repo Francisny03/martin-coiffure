@@ -237,23 +237,23 @@ include('include/header.php')
 <br>
 <br>
 <br>
-<div class="animate__animated animate__fadeInUp chef_rectangle">
+<div class="chef_rectangle">
     <div class="chef_text_image space">
         <div class="chef_text">
-            <div class="animate__animated animate__fadeInUp chef_text_grif_name">
+            <div class="annii chef_text_grif_name">
                 <div class="chef_text_griffes"></div>
                 <div class="chef_text_name">Martin ITOUA</div>
             </div>
             <br>
             <br>
-            <div class="animate__animated animate__fadeInUp chef_text_bas">
+            <div class="anni chef_text_bas">
                 <p>La coiffure est notre passion, faire de votre instant coiffure un moment
                     de détente pour vous, une véritable pause, afin de vous rendre unique...
                     Nous vous souhaitons la bienvenue au Salon Martin Coiffure...
                 </p>
             </div>
         </div>
-        <div class="animate__animated animate__fadeInUp chef_photo">
+        <div class="anni chef_photo">
             <img src="Images/chef.webp" alt="">
         </div>
     </div>
@@ -266,7 +266,7 @@ include('include/header.php')
 <br>
 <!-- animate__animated animate__fadeInUp -->
 <div class="footer">
-    <div class="footer_items space">
+    <div class="footer_items space anni">
         <div class="footer_item_left">
             <h4>Nous <span class="text_color">suivre</span></h4>
             <div class="footer_icons">
@@ -281,7 +281,7 @@ include('include/header.php')
                 </div>
             </div>
         </div>
-        <div class="footer_item_center">
+        <div class="footer_item_center anni">
             <h4>Nous <span class="text_color">Contacter</span></h4>
             <div class="footer_icons_column">
                 <div class="contacter">
@@ -304,9 +304,9 @@ include('include/header.php')
             </div>
         </div>
 
-        <div class="animate__animated animate__fadeInUp footer_item_right">
+        <div class="footer_item_right">
             <h4>Nous <span class="text_color">Contacter</span></h4>
-            <div class="animate__animated animate__fadeInUp footer_icons_column">
+            <div class="anni footer_icons_column">
                 <div class="contacter">
                     <div class="circle placeholder">
                         <img src="Images/placeholder.svg" alt="">
@@ -322,11 +322,11 @@ include('include/header.php')
     </div>
 </div>
 
-<div class="animate__animated animate__fadeInUp copyright_powered space">
-    <div class="animate__animated animate__fadeInUp copyright">
+<div class="anni copyright_powered space">
+    <div class=" copyright">
         <p>Copyright © 2023 martin COIFFURE</p>
     </div>
-    <div class="animate__animated animate__fadeInUp powered">
+    <div class=" powered">
         <p>Développé par Rêveurs professionnels & yashinka</p>
     </div>
 </div>
