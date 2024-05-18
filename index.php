@@ -2,88 +2,196 @@
 include('include/header.php')
 ?>
 
-<div class="slide">
-    <div class="slide_item">
-        <img src="Images/slider_1.webp" alt="">
-        <div class="slide-text">
-            <h1>Vous êtes la bienvenue au salon Martin Coiffure</h1>
-            <h3>Laissez nos experts vous offrir une expérience de coiffure personnalisée...</h3>
+<!-- Slider main container -->
+<div class="swiper space_bottom">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <div class="slide_image">
+                <img src="Images/slider_1.webp" alt="">
+            </div>
+            <div class="slide_filter">
+                <div class="slide-text">
+                    <h1>Vous êtes la bienvenue au salon Martin Coiffure</h1>
+                    <h3>Laissez nos experts vous offrir une expérience de coiffure personnalisée...</h3>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide_image">
+                <img src="Images/slider_2.webp" alt="">
+            </div>
+            <div class="slide_filter">
+                <div class="slide-text">
+                    <h1>Vous êtes la bienvenue au salon Martin Coiffure</h1>
+                    <h3>Laissez nos experts vous offrir une expérience de coiffure personnalisée...</h3>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide_image">
+                <img src="Images/slider_3.webp" alt="">
+            </div>
+            <div class="slide_filter">
+                <div class="slide-text">
+                    <h1>Vous êtes la bienvenue au salon Martin Coiffure</h1>
+                    <h3>Laissez nos experts vous offrir une expérience de coiffure personnalisée...</h3>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="slide_image">
+                <img src="Images/slider_4.webp" alt="">
+            </div>
+            <div class="slide_filter">
+                <div class="slide-text">
+                    <h1>Vous êtes la bienvenue au salon Martin Coiffure</h1>
+                    <h3>Laissez nos experts vous offrir une expérience de coiffure personnalisée...</h3>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="slide_item">
-        <img src="Images/slider_2.webp" alt="">
-        <div class="slide-text">
-            <h1>Vous êtes la bienvenue au salon Martin Coiffure</h1>
-            <h3>Laissez nos experts vous offrir une expérience de coiffure personnalisée...</h3>
-        </div>
-    </div>
-    <div class="slide_item">
-        <img src="Images/slider_3.webp" alt="">
-        <div class="slide-text">
-            <h1>Vous êtes la bienvenue au salon Martin Coiffure</h1>
-            <h3>Laissez nos experts vous offrir une expérience de coiffure personnalisée...</h3>
-        </div>
-    </div>
-    <div class="slide_item">
-        <img src="Images/slider_4.webp" alt="">
-        <div class="slide-text">
-            <h1>Vous êtes la bienvenue au salon Martin Coiffure</h1>
-            <h3>Laissez nos experts vous offrir une expérience de coiffure personnalisée...</h3>
-        </div>
-    </div>
+
+
+    <!-- If we need pagination -->
+    <!-- <div class="swiper-pagination"></div> -->
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <!-- <div class="swiper-scrollbar"></div> -->
 </div>
-<br>
-<br>
-<div class="nos_services_bloc space">
-    <div class=" nos_services_title arrow">
-        <p class=" form_bf_title service_title space">
+
+<div class="nos_services_bloc space space_bottom">
+    <div class="text wow animate__animated animate__fadeInUp animated nos_services_title arrow">
+        <p class="text wow animate__animated animate__fadeInUp animated form_bf_title service_title space">
             Nos services
         </p>
         <img src="Images/arrow.svg" alt="">
     </div>
     <br>
     <div class="all_services">
-        <div class=" nos_services_item">
-            <div class="services">
-                <div class="rectangle rect_img1">
-                    <p>
-                        Coiffure Dames
-                    </p>
+        <div class="text wow animate__animated animate__fadeInUp animated nos_services_item">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="flip-card-front-image">
+                            <img src="Images/coiffure.webp" alt="Avatar">
+                        </div>
+                        <div class="flip-card-front-filter">
+                            <div class="flip-card-front-text">
+                                <p>Coiffure dame</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="Images/coiffure2.jpg" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="services">
-                <div class="rectangle rect_img2">
-                    <p>
-                        Centre de formation
-                    </p>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="flip-card-front-image">
+                            <img src="Images/formation.webp" alt="Avatar">
+                        </div>
+                        <div class="flip-card-front-filter">
+                            <div class="flip-card-front-text">
+                                <p>Centre de formation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="Images/formation2.jpg" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="services">
-                <div class="rectangle rect_img3">
-                    <p>
-                        Décoration de voitures
-                    </p>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="flip-card-front-image">
+                            <img src="Images/decoration.webp" alt="Avatar">
+                        </div>
+                        <div class="flip-card-front-filter">
+                            <div class="flip-card-front-text">
+                                <p>Décoration de voitures</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="Images/decoration2.webp" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="services">
-                <div class="rectangle rect_img4">
-                    <p>
-                        Make-up
-                    </p>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="flip-card-front-image">
+                            <img src="Images/makeup.webp" alt="Avatar">
+                        </div>
+                        <div class="flip-card-front-filter">
+                            <div class="flip-card-front-text">
+                                <p>Make-up</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="Images/makeup2.jpg" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="services">
-                <div class="rectangle rect_img5">
-                    <p>
-                        Manucure & Pédicure
-                    </p>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="flip-card-front-image">
+                            <img src="Images/manucure.png" alt="Avatar">
+                        </div>
+                        <div class="flip-card-front-filter">
+                            <div class="flip-card-front-text">
+                                <p>Manucure & Pédicure</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="Images/manucure.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="services">
-                <div class="rectangle rect_img6">
-                    <p>
-                        Coloration capillaire
-                    </p>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="flip-card-front-image">
+                            <img src="Images/perruque.jpeg" alt="Avatar">
+                        </div>
+                        <div class="flip-card-front-filter">
+                            <div class="flip-card-front-text">
+                                <p>Confection de perruques</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="Images/perruque2.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="flip-card-front-image">
+                            <img src="Images/coloration.jpg" alt="Avatar">
+                        </div>
+                        <div class="flip-card-front-filter">
+                            <div class="flip-card-front-text">
+                                <p>Coloration capillaire</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="Images/coloration2.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -92,19 +200,17 @@ include('include/header.php')
 
 </div>
 
-<br>
-<br>
 
-<div class="nos_services_bloc space">
-    <div class="nos_services_title arrow">
-        <p class=" form_bf_title service_title space">
+<div class="nos_services_bloc space space_bottom">
+    <div class="text wow animate__animated animate__fadeInUp animated nos_services_title arrow">
+        <p class="text wow animate__animated animate__fadeInUp animated form_bf_title service_title space">
             Nos réalisations
         </p>
         <img src="Images/arrow.svg" alt="">
     </div>
     <br>
     <div class="all_services">
-        <div class=" nos_services_item">
+        <div class="text wow animate__animated animate__fadeInUp animated nos_services_item">
             <div class="realisation">
                 <div class="realisation_photo">
                     <img src="Images/real1.webp" alt="">
@@ -181,12 +287,10 @@ include('include/header.php')
     </div>
 </div>
 
-<br>
-<br>
 
 <div class=" nos_services_bloc space">
-    <div class="nos_services_title arrow">
-        <p class=" form_bf_title service_title space">
+    <div class="text wow animate__animated animate__fadeInUp animated nos_services_title arrow">
+        <p class="text wow animate__animated animate__fadeInUp animated form_bf_title service_title space">
             Galerie
         </p>
         <img src="Images/arrow.svg" alt="">
@@ -197,13 +301,13 @@ include('include/header.php')
     <div class="filter">
         <div class="slider_video_text">
             <p>Regarder nos vidéos sur notre chaîne Youtube</p>
-            <img src="Images/play.svg" alt="">
+            <a href=""><img src="Images/play.svg" alt=""></a>
         </div>
     </div>
 </div>
 <br>
 
-<div class=" galerie space">
+<div class="text wow animate__animated animate__fadeInUp animated galerie space space_bottom">
     <div class="galerie_photo">
         <img src="Images/real1.webp" alt="">
     </div>
@@ -224,49 +328,49 @@ include('include/header.php')
     </div>
 </div>
 
-<br>
-<br>
 
 <div class="nos_services_bloc space">
     <div class="nos_services_title arrow">
-        <p class=" form_bf_title service_title space">
+        <p class="form_bf_title service_title space text wow animate__animated animate__fadeInUp animated">
             Mot du chef
         </p>
     </div>
 </div>
 <br>
-<br>
-<br>
-<div class="chef_rectangle">
-    <div class="wow fadeInUp chef_text_image space">
-        <div class="wow fadeInUp chef_text">
+
+<fieldset>
+    <div class="chef_items space wow animate__animated animate__fadeInUp animated">
+        <p>
+            <img src="Images/chef2_coupe.png" class="pc">
+            <img src="Images/chef2_coupe.png" class="phone" style="max-width: 300px;">
+        <div class="chef_text">
             <div class="chef_text_grif_name">
                 <div class="chef_text_griffes"></div>
                 <div class="chef_text_name">Martin ITOUA</div>
             </div>
             <br>
-            <br>
             <div class="chef_text_bas">
                 <p>La coiffure est notre passion, faire de votre instant coiffure un moment
                     de détente pour vous, une véritable pause, afin de vous rendre unique...
+                    Nous attachons le plus grand soin à la qualité de nos services, nous 
+                    prenons le temps de vous écouter afin de vous proposer ce qu’il vous 
+                    conviendra le mieux en respectant votre personnalité. 
                     Nous vous souhaitons la bienvenue au Salon Martin Coiffure...
                 </p>
             </div>
         </div>
-        <div class="chef_photo">
-            <img src="Images/chef.webp" alt="">
-        </div>
+        </p>
     </div>
+</fieldset>
 
-</div>
-
+<br>
 <br>
 <br>
 <br>
 <br>
 <!--  -->
 <div class="footer">
-    <div class="footer_items space">
+    <div class="footer_items space wow animate__animated animate__fadeInUp animated">
         <div class="footer_item_left">
             <h4>Nous <span class="text_color">suivre</span></h4>
             <div class="footer_icons">
@@ -330,8 +434,6 @@ include('include/header.php')
         <p>Développé par Rêveurs professionnels & yashinka</p>
     </div>
 </div>
-
-
 
 
 
