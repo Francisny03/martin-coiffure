@@ -1,9 +1,4 @@
-
-
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+hamburger.onclick = () => {
+    hamburger.classList.toggle("open");
+    menu_nav.classList.toggle("menu_nav_slide");
 }

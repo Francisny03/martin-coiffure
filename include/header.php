@@ -19,12 +19,13 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="CSS/style.css?<?= rand() ?>">
     <link rel="stylesheet" href="CSS/phone.css?<?= rand() ?>">
+    <script src="js/script.js" defer></script>
     <title>Martin Coiffure</title>
 </head>
 
 <body>
     <header>
-        
+
         <nav class="nav_bar space">
             <div class="logo_container">
                 <a href="index.php">
