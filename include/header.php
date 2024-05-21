@@ -23,36 +23,34 @@
 </head>
 
 <body>
-    <div class="menu">
-        <div class="menu_elements space">
+    <header>
+        <nav class="nav_bar space">
             <div class="logo_container">
                 <a href="index.php">
                     <img src="Images/logo_martin.png" alt="logo Martin Coiffure">
                     <p>Martin Coiffure</p>
                 </a>
             </div>
-            <nav class="menu_nav">
-                <ul>
-                    <li class="btn_nav active"><a href="index.php">Accueil</a></li>
-                    <li class="btn_nav"><a href="conseils.html">Services</a></li>
-                    <li class="btn_nav"><a href="divers.html">Galerie</a></li>
-                    <li class="btn_nav"><a href="qui_sommes_nous.html">A propos</a></li>
-                    <li class="btn_nav"><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="menu_nav_bars" id="menuToggle">
-                <i class="fa-solid fa-bars-staggered"></i>
-            </div>
-        </div>
-    </div>
-    <div class="sidebar" id="sidebar">
-        <nav class="sidebar_nav">
-            <ul>
+
+            <ul class="menu_nav space" id="menu_nav">
                 <li class="btn_nav active"><a href="index.php">Accueil</a></li>
                 <li class="btn_nav"><a href="conseils.html">Services</a></li>
                 <li class="btn_nav"><a href="divers.html">Galerie</a></li>
-                <li class="btn_nav"><a href="qui_sommes_nous.html">A propos</a></li>
+                <li class="btn_nav"><a href="#about">A propos</a></li>
                 <li class="btn_nav"><a href="contact.html">Contact</a></li>
             </ul>
+
+            <div class="menu_hamburger" id="hamburger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <!-- <div class="menu_hamburger">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div> -->
+
         </nav>
-    </div>
+    </header>
+
+   

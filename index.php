@@ -329,7 +329,7 @@ include('include/header.php')
 </div>
 
 
-<div class="nos_services_bloc space">
+<div class="nos_services_bloc space" id="about">
     <div class="nos_services_title arrow">
         <p class="form_bf_title service_title space text wow animate__animated animate__fadeInUp animated">
             Mot du chef
@@ -342,7 +342,9 @@ include('include/header.php')
     <div class="chef_items space wow animate__animated animate__fadeInUp animated">
         <p>
             <img src="Images/chef2_coupe.png" class="pc">
-            <img src="Images/chef2_coupe.png" class="phone" style="max-width: 300px;">
+        <div class="gradient">
+            <img src="Images/chef2_coupe.png" class="phone">
+        </div>
         <div class="chef_text">
             <div class="chef_text_grif_name">
                 <div class="chef_text_griffes"></div>
@@ -352,9 +354,9 @@ include('include/header.php')
             <div class="chef_text_bas">
                 <p>La coiffure est notre passion, faire de votre instant coiffure un moment
                     de détente pour vous, une véritable pause, afin de vous rendre unique...
-                    Nous attachons le plus grand soin à la qualité de nos services, nous 
-                    prenons le temps de vous écouter afin de vous proposer ce qu’il vous 
-                    conviendra le mieux en respectant votre personnalité. 
+                    Nous attachons le plus grand soin à la qualité de nos services, nous
+                    prenons le temps de vous écouter afin de vous proposer ce qu’il vous
+                    conviendra le mieux en respectant votre personnalité.
                     Nous vous souhaitons la bienvenue au Salon Martin Coiffure...
                 </p>
             </div>
@@ -365,12 +367,9 @@ include('include/header.php')
 
 <br>
 <br>
-<br>
-<br>
-<br>
 <!--  -->
 <div class="footer">
-    <div class="footer_items space wow animate__animated animate__fadeInUp animated">
+    <div class="footer_items wow animate__animated animate__fadeInUp animated">
         <div class="footer_item_left">
             <h4>Nous <span class="text_color">suivre</span></h4>
             <div class="footer_icons">
@@ -425,10 +424,10 @@ include('include/header.php')
         </div>
     </div>
 </div>
-
-<div class="copyright_powered space">
+<br>
+<div class="copyright_powered">
     <div class=" copyright">
-        <p>Copyright © 2023 martin COIFFURE</p>
+        <p>Copyright © 2023 martin Coiffure</p>
     </div>
     <div class="powered">
         <p>Développé par Rêveurs professionnels & yashinka</p>
