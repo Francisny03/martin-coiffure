@@ -24,6 +24,7 @@
 
 <body>
     <header>
+        
         <nav class="nav_bar space">
             <div class="logo_container">
                 <a href="index.php">
@@ -52,5 +53,3 @@
 
         </nav>
     </header>
-
-   
