@@ -66,12 +66,14 @@ include('include/header.php')
 </div>
 
 <div class="nos_services_bloc space space_bottom">
-    <div class="text wow animate__animated animate__fadeInUp animated nos_services_title arrow">
-        <p class="text wow animate__animated animate__fadeInUp animated form_bf_title service_title space">
-            Nos services
-        </p>
-        <img src="Images/arrow.svg" alt="">
-    </div>
+    <a href="service.php">
+        <div class="text wow animate__animated animate__fadeInUp animated nos_services_title arrow">
+            <p class="text wow animate__animated animate__fadeInUp animated form_bf_title service_title space">
+                Nos services
+            </p>
+            <img src="Images/arrow.svg" alt="">
+        </div>
+    </a>
     <br>
     <div class="all_services">
         <div class="text wow animate__animated animate__fadeInUp animated nos_services_item">
@@ -202,12 +204,14 @@ include('include/header.php')
 
 
 <div class="nos_services_bloc space space_bottom">
-    <div class="text wow animate__animated animate__fadeInUp animated nos_services_title arrow">
-        <p class="text wow animate__animated animate__fadeInUp animated form_bf_title service_title space">
-            Nos réalisations
-        </p>
-        <img src="Images/arrow.svg" alt="">
-    </div>
+    <a href="galerie.php">
+        <div class="text wow animate__animated animate__fadeInUp animated nos_services_title arrow">
+            <p class="text wow animate__animated animate__fadeInUp animated form_bf_title service_title space">
+                Nos réalisations
+            </p>
+            <img src="Images/arrow.svg" alt="">
+        </div>
+    </a>
     <br>
     <div class="all_services">
         <div class="text wow animate__animated animate__fadeInUp animated nos_services_item">
@@ -289,19 +293,25 @@ include('include/header.php')
 
 
 <div class=" nos_services_bloc space">
-    <div class="text wow animate__animated animate__fadeInUp animated nos_services_title arrow">
-        <p class="text wow animate__animated animate__fadeInUp animated form_bf_title service_title space">
-            Galerie
-        </p>
-        <img src="Images/arrow.svg" alt="">
-    </div>
+    <a href="galerie.php">
+        <div class="text wow animate__animated animate__fadeInUp animated nos_services_title arrow">
+            <p class="text wow animate__animated animate__fadeInUp animated form_bf_title service_title space">
+                Galerie
+            </p>
+            <img src="Images/arrow.svg" alt="">
+        </div>
+    </a>
 </div>
 <br>
 <div class=" slider_video">
     <div class="filter">
         <div class="slider_video_text">
             <p>Regarder nos vidéos sur notre chaîne Youtube</p>
-            <a href=""><img src="Images/play.svg" alt=""></a>
+            <div class="wow animate__animated animate__pulse animated">
+                <a href="https://www.youtube.com/@martincoiffure9082">
+                    <img src="Images/play.svg" alt="" class="svg-color-change">
+                </a>
+            </div>
         </div>
     </div>
 </div>

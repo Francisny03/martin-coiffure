@@ -5,15 +5,24 @@
         <div class="footer_item_left">
             <h4>Nous <span class="text_color">suivre</span></h4>
             <div class="footer_icons">
-                <div class="circle facebook">
-                    <img src="Images/facebook.svg" alt="">
-                </div>
-                <div class="circle insta">
-                    <img src="Images/instagram.svg" alt="">
-                </div>
-                <div class="circle tiktok">
-                    <img src="Images/tiktok.svg" alt="">
-                </div>
+                <a href="https://www.facebook.com/profile.php?id=100064104010472">
+                    <div class="circle facebook">
+                        <img src="Images/facebook.svg" alt="">
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/martincoiffure/">
+                    <div class="circle insta">
+                        <img src="Images/instagram.svg" alt="">
+                    </div>
+                </a>
+
+                <a href="https://www.tiktok.com/@martincoiffure">
+                    <div class="circle tiktok">
+                        <img src="Images/tiktok.svg" alt="">
+                    </div>
+                </a>
+
             </div>
         </div>
         <div class="footer_item_center">
@@ -29,12 +38,16 @@
                     </div>
                 </div>
                 <div class="contacter">
-                    <div class="circle whatsapp">
-                        <img src="Images/whatsapp.svg" alt="">
-                    </div>
-                    <div class="contacter_number">
-                        <p>+242 06 661 20 33</p>
-                    </div>
+                    <a
+                        href="https://api.whatsapp.com/send?phone=%2B242066612033&context=ARD89EEUoSuYa4Ep1E6d3gR7OP0VIaWKMnGLahXn03sqJqUi1m7ifAZrP6Gw7Rrmo3O1PTG21mWr5_QhDtOSUGUWPwV8oAASo_2HLcM-OUHFx2Q2IeTWYH4h5Uy-vKJ7EhHqAAOQH0q9MR4ZlEmunLAA8A&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwZXh0bgNhZW0CMTAAAR3CBzjaOVj945WrjvqW4WqZojPNCgxKAIed4Ts_AyRcxvxYs9UsFi77gVk_aem_AWaR-McLahJtN6JqKqC48CcTh2r7rY6K6ZZdiS-8CykcwfM1DxYADU9PxavMoUcGPywa-LmXY_ncxDkGaZrwpv5J">
+                        <div class="circle whatsapp">
+                            <img src="Images/whatsapp.svg" alt="">
+                        </div>
+                        <div class="contacter_number">
+                            <p>+242 06 661 20 33</p>
+                        </div>
+                    </a>
+
                 </div>
             </div>
         </div>
@@ -43,14 +56,18 @@
             <h4>Notre <span class="text_color">Adresse</span></h4>
             <div class="footer_icons_column">
                 <div class="contacter">
-                    <div class="circle placeholder">
-                        <img src="Images/placeholder.svg" alt="">
-                    </div>
-                    <div class="adress">
-                        <p>127 rue Mbochis, poto-poto
-                            Arrêt Madoukou
-                        </p>
-                    </div>
+                    <a
+                        href="https://www.google.com/maps/place/Martin+Coiffure/@-4.2558548,15.2852711,15z/data=!4m6!3m5!1s0x1a6a33eb2566048b:0x943f5bb80c9e814f!8m2!3d-4.2558548!4d15.2852711!16s%2Fg%2F11hzynf2s7?entry=ttu">
+                        <div class="circle placeholder">
+                            <img src="Images/placeholder.svg" alt="">
+                        </div>
+                        <div class="adress">
+                            <p>127 rue Mbochis, poto-poto
+                                Arrêt Madoukou
+                            </p>
+                        </div>
+                    </a>
+
                 </div>
             </div>
         </div>
