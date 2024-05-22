@@ -468,6 +468,7 @@
         overflow: hidden;
         display: flex;
         width: 100%;
+        min-width: 99%;
         height: 150px;
         align-items: center;
     }
@@ -497,5 +498,83 @@
         font-size: 10pt;
     }
 
+    .write_us_all {
+        display: flex;
+        background-color: var(--texte);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .write_left {
+        display: none;
+    }
+
+    .write_right {
+        display: flex;
+        width: 95%;
+        margin-right: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        min-width: 100%;
+    }
+
+    .write_text {
+        display: none;
+    }
+
+    .write_rect {
+        flex-direction: column;
+        height: 117px;
+    }
+
+    .prenom,
+    .mail,
+    .number,
+    .write_textarea2 {
+        background: var(--texte);
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        width: 100%;
+        color: black;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .write_space{
+        height: 55px;
+    }
+
+    .write_textarea2{
+        height: 105px;
+    }
+
+    .city {
+        display: none;
+    }
+
+    ::placeholder {
+        color: #242424;
+        opacity: 0.7;
+        /* Firefox */
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        background-color: var(--dots-color);
+        color: var(--menu_color);
+        font-size: 14pt;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: var(--dots-color);
+    }
 
 }

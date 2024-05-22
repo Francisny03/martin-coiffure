@@ -29,17 +29,17 @@ include('include/header.php')
             </div>
             <form action="" method="get">
                 <div class="write_rect">
-                    <input class="prenom" type="text" name="prenom" id="nom" placeholder="Votre nom" required>
-                    <input class="mail" type="e-mail" name="mail" id="mail" placeholder="Votre adresse mail" required>
+                    <input class="prenom" type="text" name="prenom" id="nom" placeholder="Nom & Prénom" required>
+                    <input class="mail" type="e-mail" name="mail" id="mail" placeholder="Adresse mail" required>
                 </div>
-                <div class="write_rect">
-                    <input class="number" type="text" name="number" id="number" placeholder="Votre numéro de téléphone"
+                <div class="write_rect write_space">
+                    <input class="number" type="text" name="number" id="number" placeholder="Numéro de téléphone"
                         required>
                     <input class="city" type="text" name="ville" id="ville" placeholder="Votre ville" required>
                 </div>
                 <div class="write_rect">
                     <textarea class="write_textarea2" name="textarea" id="textarea"
-                        placeholder="Votre texte ici..."></textarea>
+                        placeholder="Votre message ici..."></textarea>
                 </div>
                 <input type="submit" value="Envoyer">
             </form>

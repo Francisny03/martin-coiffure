@@ -3,6 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description"
+        content="Salon de coiffure & esthétique, centre de formation, décoration de voitures, make-up, confection de perruques">
+    <meta name="keyword" content="salon, coiffure, make-up, esthétique, dame, femme, décoration, perruques">
+    <meta property="og:image" content="https://martincoiffure.top/Images/logo_ref.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- wow animate_animated -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
