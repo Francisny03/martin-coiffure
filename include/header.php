@@ -25,7 +25,6 @@
 
 <body>
     <header>
-
         <nav class="nav_bar space">
             <div class="logo_container">
                 <a href="index.php">
@@ -35,11 +34,11 @@
             </div>
 
             <ul class="menu_nav space" id="menu_nav">
-                <li class="btn_nav active"><a href="index.php">Accueil</a></li>
-                <li class="btn_nav"><a href="conseils.html">Services</a></li>
-                <li class="btn_nav"><a href="divers.html">Galerie</a></li>
-                <li class="btn_nav"><a href="#about">A propos</a></li>
-                <li class="btn_nav"><a href="contact.html">Contact</a></li>
+                <li class="btn_nav"><a href="index.php">Accueil</a></li>
+                <li class="btn_nav"><a href="service.php">Services</a></li>
+                <li class="btn_nav"><a href="galerie.php">Galerie</a></li>
+                <li class="btn_nav"><a href="index.php#about">A propos</a></li>
+                <li class="btn_nav"><a href="contact.php">Contact</a></li>
             </ul>
 
             <div class="menu_hamburger" id="hamburger">

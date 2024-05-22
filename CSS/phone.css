@@ -31,7 +31,25 @@
     }
 
     .logo_container img {
-        width: 50px;
+        width: 35px;
+    }
+
+    .logo_container p {
+        position: relative;
+        padding-left: 5px;
+        font-size: 12pt;
+    }
+
+    .logo_container p::after {
+        display: flex;
+        content: "";
+        width: 2px;
+        height: 30px;
+        background-color: rgb(255, 255, 255);
+        margin-left: 10px;
+        position: absolute;
+        top: -5px;
+        left: -10px;
     }
 
     .menu_hamburger {
@@ -45,19 +63,23 @@
         margin-top: 0;
     }
 
+    header {
+        height: 50px;
+    }
+
     .bar1,
     .bar2,
     .bar3 {
-        width: 35px;
-        height: 4px;
+        width: 25px;
+        height: 3px;
         background-color: var(--texte);
-        margin-top: 4px;
+        margin-top: 3px;
         border-radius: 5px;
         transition: all 0.7s;
     }
 
     .bar2 {
-        width: 25px;
+        width: 20px;
         align-self: end;
     }
 
@@ -140,16 +162,17 @@
         color: white;
         max-width: 250px;
         margin-left: 20px;
+        margin-top: 20%;
     }
 
     .slide-text h1 {
-        font-size: 15pt;
+        font-size: 12pt;
         font-weight: 700;
         margin-bottom: 10px;
     }
 
     .slide-text h3 {
-        font-size: 12pt;
+        font-size: 9pt;
         font-weight: 300;
         margin-bottom: 0;
     }
@@ -403,6 +426,76 @@
         padding-bottom: 28px;
     }
 
+
+    /* Service page */
+    .slide_service_galerie {
+        width: 100%;
+        height: 250px;
+        position: relative;
+        overflow: hidden;
+        background-position: right;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .slide_text_service {
+        color: white;
+        font-size: 15pt;
+    }
+
+    .description_text {
+        font-size: 12pt;
+        font-weight: 400;
+        text-align: center;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .service_page_all {
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        row-gap: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .service_page_items {
+        background-color: var(--bg_color);
+        border: 2px solid var(--dots-color);
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        height: 150px;
+        align-items: center;
+    }
+
+    .service_page_items img {
+        width: 125px;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-right: none;
+    }
+
+    .service_page_items_text {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .service_page_items_text h1 {
+        color: var(--dots-color);
+        font-size: 13pt;
+    }
+
+    .service_page_items_text p {
+        text-align: left;
+        padding-top: 15px;
+        max-width: 98%;
+        font-size: 10pt;
+    }
 
 
 }

@@ -365,78 +365,7 @@ include('include/header.php')
     </div>
 </fieldset>
 
-<br>
-<br>
 <!--  -->
-<div class="footer">
-    <div class="footer_items wow animate__animated animate__fadeInUp animated">
-        <div class="footer_item_left">
-            <h4>Nous <span class="text_color">suivre</span></h4>
-            <div class="footer_icons">
-                <div class="circle facebook">
-                    <img src="Images/facebook.svg" alt="">
-                </div>
-                <div class="circle insta">
-                    <img src="Images/instagram.svg" alt="">
-                </div>
-                <div class="circle tiktok">
-                    <img src="Images/tiktok.svg" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="footer_item_center">
-            <h4>Nous <span class="text_color">Contacter</span></h4>
-            <div class="footer_icons_column">
-                <div class="contacter">
-                    <div class="circle call">
-                        <img src="Images/call.svg" alt="">
-                    </div>
-                    <div class="contacter_number">
-                        <p>+242 06 661 20 33</p>
-                        <p>05 570 56 80</p>
-                    </div>
-                </div>
-                <div class="contacter">
-                    <div class="circle whatsapp">
-                        <img src="Images/whatsapp.svg" alt="">
-                    </div>
-                    <div class="contacter_number">
-                        <p>+242 06 661 20 33</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer_item_right">
-            <h4>Nous <span class="text_color">Contacter</span></h4>
-            <div class="footer_icons_column">
-                <div class="contacter">
-                    <div class="circle placeholder">
-                        <img src="Images/placeholder.svg" alt="">
-                    </div>
-                    <div class="adress">
-                        <p>127 rue Mbochis, poto-poto
-                            Arrêt Madoukou
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<br>
-<div class="copyright_powered">
-    <div class=" copyright">
-        <p>Copyright © 2023 martin Coiffure</p>
-    </div>
-    <div class="powered">
-        <p>Développé par Rêveurs professionnels & yashinka</p>
-    </div>
-</div>
-
-
-
-
 
 <?php
 include('include/footer.php')
