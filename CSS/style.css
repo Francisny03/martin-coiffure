@@ -696,6 +696,7 @@ h4 {
   overflow: hidden;
   display: flex;
   width: 32%;
+  min-width: 450px;
   height: 250px;
   align-items: center;
 }
