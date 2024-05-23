@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/ico/x-icon" href="Images/favicon_io/favicon.ico">
+    <link rel="icon" type="image/ico/x-icon" href="Images/favicon_io/logo_fav.png">
     
     <!-- wow animate_animated -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
