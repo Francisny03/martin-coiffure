@@ -18,9 +18,6 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- Favicon -->
-    <!-- <link rel="icon" type="image/ico/x-icon" href="Images/favicon_io/favicon.ico"> -->
-
     <!-- wow animate_animated -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- swiper, slider -->
@@ -63,10 +60,5 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
-
-            <!-- <div class="menu_hamburger">
-                <i class="fa-solid fa-bars-staggered"></i>
-            </div> -->
-
         </nav>
     </header>

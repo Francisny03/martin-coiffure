@@ -12,7 +12,7 @@ include('include/header.php')
 
 <div class="description_text space_bottom">
     <p>Plongez dans l'univers créatif du salon Martin Coiffure à travers notre galerie de
-        réalisations. Admirez les transformations spectaculaires et les styles uniques
+        réalisations. Admirez les transformations spectaculaires
         realisés par notre équipe de professionnels.
     </p>
 </div>
