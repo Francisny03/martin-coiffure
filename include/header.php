@@ -8,6 +8,10 @@
     <meta name="keyword" content="salon, coiffure, make-up, esthétique, dame, femme, décoration, perruques">
     <meta property="og:image" content="https://martincoiffure.top/Images/logo_ref.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/ico/x-icon" href="Images/favicon_io/favicon.ico">
+    
     <!-- wow animate_animated -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- swiper, slider -->

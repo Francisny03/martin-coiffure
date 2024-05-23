@@ -35,7 +35,7 @@ include('include/header.php')
                 <div class="write_rect write_space">
                     <input class="number" type="text" name="number" id="number" placeholder="Numéro de téléphone"
                         required>
-                    <input class="city" type="text" name="ville" id="ville" placeholder="Votre ville" required>
+                    <input class="city" type="text" name="ville" id="ville" placeholder="Votre ville">
                 </div>
                 <div class="write_rect">
                     <textarea class="write_textarea2" name="textarea" id="textarea" placeholder="Votre message ici..."
