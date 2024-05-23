@@ -44,7 +44,7 @@ include('include/header.php')
         </div>
     </div>
 </div>
-
+<div class="loading" id="loading">Envoi en cours...</div>
 
 
 <?php
