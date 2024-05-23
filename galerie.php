@@ -18,6 +18,74 @@ include('include/header.php')
 </div>
 
 
+<div class="galerie_all_page">
+    <a href="galerie_view.php">
+        <div class="galerie_page_items">
+            <img src="Images/real3.webp" alt="">
+            <div class="galerie_page_badge">12</div>
+            <div class="galerie_page_title">Coiffure de mariage</div>
+        </div>
+    </a>
+
+    <a href="galerie_view.php">
+        <div class="galerie_page_items">
+            <img src="Images/real3.webp" alt="">
+            <div class="galerie_page_badge">12</div>
+            <div class="galerie_page_title">Coiffure de mariage</div>
+        </div>
+    </a>
+
+    <a href="galerie_view.php">
+        <div class="galerie_page_items">
+            <img src="Images/real3.webp" alt="">
+            <div class="galerie_page_badge">12</div>
+            <div class="galerie_page_title">Coiffure de mariage</div>
+        </div>
+    </a>
+
+    <a href="galerie_view.php">
+        <div class="galerie_page_items">
+            <img src="Images/real3.webp" alt="">
+            <div class="galerie_page_badge">12</div>
+            <div class="galerie_page_title">Coiffure de mariage</div>
+        </div>
+    </a>
+
+    <a href="galerie_view.php">
+        <div class="galerie_page_items">
+            <img src="Images/real3.webp" alt="">
+            <div class="galerie_page_badge">12</div>
+            <div class="galerie_page_title">Coiffure de mariage</div>
+        </div>
+    </a>
+
+    <a href="galerie_view.php">
+        <div class="galerie_page_items">
+            <img src="Images/real3.webp" alt="">
+            <div class="galerie_page_badge">12</div>
+            <div class="galerie_page_title">Coiffure de mariage</div>
+        </div>
+    </a>
+
+    <a href="galerie_view.php">
+        <div class="galerie_page_items">
+            <img src="Images/real3.webp" alt="">
+            <div class="galerie_page_badge">12</div>
+            <div class="galerie_page_title">Coiffure de mariage</div>
+        </div>
+    </a>
+
+    <a href="galerie_view.php">
+        <div class="galerie_page_items">
+            <img src="Images/real3.webp" alt="">
+            <div class="galerie_page_badge">12</div>
+            <div class="galerie_page_title">Coiffure de mariage</div>
+        </div>
+    </a>
+</div>
+
+
+
 
 
 
