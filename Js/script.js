@@ -30,17 +30,3 @@ function setActiveNav() {
 window.onload = setActiveNav;
 
 
-
-document.getElementById('contactForm').addEventListener('submit', function (event) {
-    event.preventDefault();
-    var formData = new FormData(this);
-
-    fetch('send-email.php', {
-        method: 'POST',
-        body: formData
-    }).then(response => response.text()).then(data => {
-        alert('Message envoyé avec succès!');
-    }).catch(error => {
-        alert('Erreur lors de l\'envoi du message.');
-    });
-});
