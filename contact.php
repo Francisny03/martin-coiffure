@@ -27,22 +27,20 @@ include('include/header.php')
             <div class="write_text">
                 <p>Ecrivez-vous</p>
             </div>
-            <form action="" method="get" id="contactForm">
-                <div class="write_rect">
-                    <input class="prenom" type="text" name="prenom" id="nom" placeholder="Nom & Prénom" required>
-                    <input class="mail" type="e-mail" name="mail" id="mail" placeholder="Adresse mail" required>
-                </div>
-                <div class="write_rect write_space">
-                    <input class="number" type="text" name="number" id="number" placeholder="Numéro de téléphone"
-                        required>
-                    <input class="city" type="text" name="ville" id="ville" placeholder="Votre ville" required>
-                </div>
-                <div class="write_rect">
-                    <textarea class="write_textarea2" name="textarea" id="textarea"
-                        placeholder="Votre message ici..."></textarea>
-                </div>
-                <input type="submit" value="Envoyer" >
-            </form>
+            <form id="contactForm">
+        <div class="write_rect">
+            <input class="prenom" type="text" name="prenom" id="nom" placeholder="Nom & Prénom" required>
+            <input class="mail" type="email" name="mail" id="mail" placeholder="Adresse mail" required>
+        </div>
+        <div class="write_rect write_space">
+            <input class="number" type="text" name="number" id="number" placeholder="Numéro de téléphone" required>
+            <input class="city" type="text" name="ville" id="ville" placeholder="Votre ville" required>
+        </div>
+        <div class="write_rect">
+            <textarea class="write_textarea2" name="textarea" id="textarea" placeholder="Votre message ici..." required></textarea>
+        </div>
+        <input type="submit" value="Envoyer">
+    </form>
         </div>
     </div>
 </div>

@@ -1,15 +1,15 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['prenom']);
+    $prenom = htmlspecialchars($_POST['prenom']);
     $mail = htmlspecialchars($_POST['mail']);
     $number = htmlspecialchars($_POST['number']);
-    $email = htmlspecialchars($_POST['email']);
+    $ville = htmlspecialchars($_POST['ville']);
     $message = htmlspecialchars($_POST['textarea']);
-    
+
     $to = "khalilobaadef@gmail.com"; // Remplacez par votre adresse e-mail
-    $subject = $message;
-    $body = "Prénom: $name \n Gmail: $email \n Numéro: $number";
-    $headers = "From: $email";
+    $subject = "Nouveau message de contact";
+    $body = "Prénom: $prenom\nAdresse mail: $mail\nNuméro de téléphone: $number\nVille: $ville\n\nMessage:\n$message";
+    $headers = "From: $mail";
 
     if (mail($to, $subject, $body, $headers)) {
         echo "Message envoyé avec succès!";
