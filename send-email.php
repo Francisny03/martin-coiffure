@@ -3,7 +3,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $prenom = htmlspecialchars($_POST['prenom']);
     $mail = htmlspecialchars($_POST['mail']);
     $number = htmlspecialchars($_POST['number']);
-    $ville = htmlspecialchars($_POST['ville']);
     $message = htmlspecialchars($_POST['textarea']);
 
     $to = "contact@martincoiffure.top"; // Remplacez par votre adresse e-mail
