@@ -89,7 +89,7 @@
         document.getElementById('contactForm').addEventListener('submit', function(event) {
             event.preventDefault();
             var formData = new FormData(this);
-            var loading = document.getElementById('loading');
+            // var loading = document.getElementById('loading');
 
             // Afficher l'élément de chargement
             // loading.style.display = 'block';
