@@ -27,7 +27,7 @@ include('include/header.php')
             <div class="write_text">
                 <p>Ecrivez-vous</p>
             </div>
-            <form action="" method="get">
+            <form action="" method="get" id="contactForm">
                 <div class="write_rect">
                     <input class="prenom" type="text" name="prenom" id="nom" placeholder="Nom & Prénom" required>
                     <input class="mail" type="e-mail" name="mail" id="mail" placeholder="Adresse mail" required>
@@ -41,7 +41,7 @@ include('include/header.php')
                     <textarea class="write_textarea2" name="textarea" id="textarea"
                         placeholder="Votre message ici..."></textarea>
                 </div>
-                <input type="submit" value="Envoyer">
+                <input type="submit" value="Envoyer" >
             </form>
         </div>
     </div>
