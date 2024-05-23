@@ -83,10 +83,6 @@
     </div>
 </div>
 
-<!-- Script menu hamburger -->
-<script>
-
-</script>
 
 <!-- swiper script -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -115,6 +111,7 @@ const swiper = new Swiper('.swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+
 
     // Scrollbar (optionnel)
     scrollbar: {

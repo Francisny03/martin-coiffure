@@ -144,7 +144,29 @@
     }
 
     .swiper {
+        width: 100%;
         height: 300px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .swiper-slide {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slide_image {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .slide_image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .slide_filter {
@@ -156,6 +178,11 @@
         background: rgba(0, 0, 0, 0.5);
         display: flex;
         align-items: center;
+        justify-content: left;
+        transform: translateZ(0);
+        opacity: 1;
+        /* Ensure the overlay and text are always visible */
+        transition: opacity 0.3s ease;
     }
 
     .slide-text {
@@ -163,6 +190,9 @@
         max-width: 250px;
         margin-left: 20px;
         margin-top: 20%;
+        opacity: 1;
+        /* Ensure the overlay and text are always visible */
+        transition: opacity 0.3s ease;
     }
 
     .slide-text h1 {
@@ -498,11 +528,18 @@
         font-size: 10pt;
     }
 
+    /* Contact page */
+
     .write_us_all {
         display: flex;
         background-color: var(--texte);
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        width: 90%;
+        width: 94%;
+        margin: auto;
+    }
+
+    .write_items {
+        width: 95%;
         margin: auto;
     }
 
@@ -513,7 +550,8 @@
     .write_right {
         display: flex;
         width: 95%;
-        margin-right: 0;
+        margin: auto;
+        margin-top: 15px;
         flex-direction: column;
         align-items: center;
     }
@@ -536,19 +574,22 @@
     .number,
     .write_textarea2 {
         background: var(--texte);
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        -webkit-box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
+        box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
         width: 100%;
         color: black;
         margin-bottom: 10px;
         border-radius: 5px;
-        padding: 10px;
+        transform: translateZ(0);
+        /* Force hardware acceleration */
+        will-change: box-shadow;
     }
 
-    .write_space{
+    .write_space {
         height: 55px;
     }
 
-    .write_textarea2{
+    .write_textarea2 {
         height: 105px;
     }
 
@@ -567,10 +608,15 @@
         background-color: var(--dots-color);
         color: var(--menu_color);
         font-size: 14pt;
-        padding: 10px 15px;
+        margin-bottom: 15px;
         border: none;
         cursor: pointer;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+        transform: translateZ(0);
+        /* Force hardware acceleration */
+        will-change: box-shadow;
+        /* Inform the browser about the expected changes */
     }
 
     input[type="submit"]:hover {
