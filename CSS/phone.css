@@ -680,5 +680,32 @@
         font-weight: bold;
     }
 
+    /* Galerie_view page */
+    .galerie_view_all_page {
+        align-items: center;
+        justify-content: left;
+        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 96%;
+        margin: auto;
+    }
+
+    .galerie_view_items {
+        width: 105px;
+        height: 150px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+    }
+
+    .galerie_view_items img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+
 
 }
