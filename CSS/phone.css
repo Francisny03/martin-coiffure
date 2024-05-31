@@ -684,7 +684,7 @@
     .galerie_view_all_page {
         align-items: center;
         justify-content: left;
-        gap: 10px;
+        gap: 5px;
         display: flex;
         flex-wrap: wrap;
         width: 96%;

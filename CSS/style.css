@@ -904,16 +904,16 @@ input[type="submit"]:hover {
 .galerie_view_all_page {
   align-items: center;
   justify-content: left;
-  gap: 15px;
+  gap: 7px;
   display: flex;
   flex-wrap: wrap;
-  width: 96%;
+  width: 98%;
   margin: auto;
 }
 
 .galerie_view_items {
-  width: 295px;
-  height: 365px;
+  width: 280px;
+  height: 367px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
