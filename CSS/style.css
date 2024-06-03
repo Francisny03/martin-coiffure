@@ -710,8 +710,8 @@ h4 {
 }
 
 .service_page_items {
-  background-color: var(--bg_color);
-  border: 2px solid var(--dots-color);
+  background-color: #ffffff;
+  /* border: 2px solid var(--dots-color); */
   border-radius: 10px;
   overflow: hidden;
   display: flex;
@@ -719,6 +719,7 @@ h4 {
   min-width: 450px;
   height: 250px;
   align-items: center;
+  box-shadow: 0px 0px 5px 0px #00000003;
 }
 
 .service_page_items img {
@@ -730,19 +731,21 @@ h4 {
 }
 
 .service_page_items_text {
-  padding-left: 10px;
+  padding-left: 15px;
   padding-right: 10px;
 }
 
 .service_page_items_text h1 {
-  color: var(--dots-color);
-  font-size: 20pt;
+  color: var(--menu_color);
+  font-size: 18pt;
 }
 
 .service_page_items_text p {
   text-align: justify;
   padding-top: 15px;
   max-width: 93%;
+  color: #000000;
+  font-size: 11pt;
 }
 
 
