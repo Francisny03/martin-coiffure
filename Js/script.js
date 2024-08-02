@@ -55,3 +55,6 @@ btn.onclick = function () {
 function closePopup() {
     popup.style.display = "none";
 }
+
+
+console.log('JavaScript is loaded');
