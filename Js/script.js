@@ -30,3 +30,28 @@ function setActiveNav() {
 window.onload = setActiveNav;
 
 
+
+// let popup = document.getElementById("popup");
+
+// function openPopup() {
+//     popup.classList.add("open_popup");
+//     document.body.style.overflow = "hidden"; // Empêcher le défilement de la page
+// }
+
+// function closePopup() {
+//     popup.classList.remove("open_popup");
+//     document.body.style.overflow = ""; // Permettre à nouveau le défilement de la page
+// }
+
+
+var modal = document.getElementById("popup");
+
+var btn = document.getElementById("myBtn");
+
+btn.onclick = function () {
+    popup.style.display = "block";
+}
+
+function closePopup() {
+    popup.style.display = "none";
+}

@@ -26,6 +26,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TGS58WEBXD"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-TGS58WEBXD');
+    </script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,11 +47,39 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="CSS/style.css?<?= rand() ?>">
     <link rel="stylesheet" href="CSS/phone.css?<?= rand() ?>">
-    <script src="js/script.js" defer></script>
+    <script src="js/script.js ?<?= rand() ?>" defer></script>
     <title>Martin Coiffure</title>
 </head>
 
 <body>
+    <script type="module">
+    // Import the functions you need from the SDKs you need
+    import {
+        initializeApp
+    } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+    import {
+        getAnalytics
+    } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyDZJa8hqEiv5D7o_jkQGkYv_d_N-Dw3pPo",
+        authDomain: "martin-coiffure.firebaseapp.com",
+        projectId: "martin-coiffure",
+        storageBucket: "martin-coiffure.appspot.com",
+        messagingSenderId: "483251669801",
+        appId: "1:483251669801:web:705725677b597664980538",
+        measurementId: "G-S8GXLLZS9Y"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    </script>
+
     <header>
         <nav class="nav_bar space">
             <div class="logo_container">

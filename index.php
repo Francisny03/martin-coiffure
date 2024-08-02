@@ -307,10 +307,24 @@ include('include/header.php')
     <div class="filter">
         <div class="slider_video_text">
             <p>Regarder nos vidéos sur notre chaîne Youtube</p>
-            <div class="wow animate__animated animate__pulse animated">
-                <a href="https://www.youtube.com/@martincoiffure9082">
+            <div class="container wow animate__animated animate__pulse animated">
+                <button type="submit" id="myBtn">
                     <img src="Images/play.svg" alt="" class="svg-color-change">
-                </a>
+                </button>
+                <!-- <a href="https://www.youtube.com/@martincoiffure9082"> -->
+                <!-- </a> -->
+            </div>
+            <div class="popup" id="popup">
+                <div class="popup_content">
+                    <iframe src="https://www.youtube.com/embed/y41Dq_AI8x4?si=WIboyTZ-2xr_IRpW"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <button type="button" onclick="closePopup()">OK</button>
+                </div>
+                <!-- <button type="button"><a href="https://www.youtube.com/@martincoiffure9082">Visiter notre chaîne
+                        Youtube</a></button> -->
+
             </div>
         </div>
     </div>
