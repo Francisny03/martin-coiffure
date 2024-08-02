@@ -47,7 +47,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="CSS/style.css?<?= rand() ?>">
     <link rel="stylesheet" href="CSS/phone.css?<?= rand() ?>">
-    <script src="js/script.js ?<?= rand() ?>" defer></script>
+    <script src="js/script.js?<?= rand() ?>" defer></script>
     <title>Martin Coiffure</title>
 </head>
 

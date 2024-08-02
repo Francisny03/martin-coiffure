@@ -1,7 +1,11 @@
+console.log('etape1');
 hamburger.onclick = () => {
+    console.log('etape0');
     hamburger.classList.toggle("open");
     menu_nav.classList.toggle("menu_nav_slide");
 }
+
+console.log('etape2');
 
 // Fonction pour obtenir le nom de fichier sans l'extension et le chemin
 
@@ -10,6 +14,8 @@ function getCurrentPage() {
     const page = path.split("/").pop();
     return page.split(".")[0];
 }
+
+console.log('etape3');
 
 // Fonction pour définir la classe active
 function setActiveNav() {
@@ -25,6 +31,8 @@ function setActiveNav() {
         }
     });
 }
+
+console.log('etape4');
 
 // Appelez la fonction pour définir la classe active lors du chargement de la page
 window.onload = setActiveNav;
@@ -57,4 +65,3 @@ function closePopup() {
 }
 
 
-console.log('JavaScript is loaded');
