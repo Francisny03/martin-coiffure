@@ -57,18 +57,6 @@ window.onload = setActiveNav;
 // }
 
 
-var modal = document.getElementById("popup");
-
-var btn = document.getElementById("myBtn");
-
-btn.onclick = function () {
-    popup.style.display = "block";
-}
-
-function closePopup() {
-    popup.style.display = "none";
-}
-
 
 console.log('etape5');
 
@@ -83,10 +71,21 @@ document.querySelectorAll(".galerie_view_items img").forEach(function (img) {
 
 console.log('etape6');
 
+var modal = document.getElementById("popup");
+
+var btn = document.getElementById("myBtn");
+
+btn.onclick = function () {
+    popup.style.display = "block";
+}
+
+function closePopup() {
+    popup.style.display = "none";
+}
+
 document.querySelector("#image-viewer .close").addEventListener("click", function () {
     document.getElementById("image-viewer").style.display = "none";
 });
-
 
 
 console.log('etape7');
