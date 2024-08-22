@@ -512,13 +512,7 @@
 
     /* Service page */
     .slide_service_galerie {
-        width: 100%;
         height: 250px;
-        position: relative;
-        overflow: hidden;
-        background-position: right;
-        background-size: cover;
-        background-attachment: fixed;
     }
 
     .slide_text_service {
@@ -737,13 +731,8 @@
 
     /* Galerie_view page */
     .galerie_view_all_page {
-        align-items: center;
-        justify-content: left;
         gap: 5px;
-        display: flex;
-        flex-wrap: wrap;
         width: 96%;
-        margin: auto;
     }
 
     .galerie_view_items {

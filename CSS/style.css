@@ -767,7 +767,7 @@ h4 {
 
 .service_page_all {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   flex-wrap: wrap;
   width: 97%;
   row-gap: 30px;
@@ -980,7 +980,7 @@ input[type="submit"]:hover {
 /* Galerie_view page */
 .galerie_view_all_page {
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   gap: 7px;
   display: flex;
   flex-wrap: wrap;
