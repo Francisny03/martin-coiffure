@@ -57,37 +57,40 @@ window.onload = setActiveNav;
 // }
 
 
+console.log('etape7');
 
-console.log('etape5');
 
-// image viewer gallery
-document.querySelectorAll(".galerie_view_items img").forEach(function (img) {
-    img.addEventListener("click", function () {
-        document.getElementById("full-image").src = this.src;
-        document.getElementById("image-viewer").style.display = "block";
+document.addEventListener("DOMContentLoaded", function () {
+    // image viewer gallery
+    document.querySelectorAll(".galerie_view_items img").forEach(function (img) {
+        img.addEventListener("click", function () {
+            document.getElementById("full-image").src = this.src;
+            document.getElementById("image-viewer").style.display = "block";
+        });
+    });
+
+    document.querySelector(".close").addEventListener("click", function () {
+        document.getElementById("image-viewer").style.display = "none";
+    });
+
+    document.getElementById("image-viewer").addEventListener("click", function (event) {
+        if (event.target === this) {
+            this.style.display = "none";
+        }
     });
 });
 
 
 console.log('etape6');
 
-var modal = document.getElementById("popup");
-
-var btn = document.getElementById("myBtn");
-
-btn.onclick = function () {
-    popup.style.display = "block";
-}
-
-function closePopup() {
-    popup.style.display = "none";
-}
-
-document.querySelector("#image-viewer .close").addEventListener("click", function () {
-    document.getElementById("image-viewer").style.display = "none";
+document.getElementById("myBtn").addEventListener("click", function () {
+    document.getElementById("popup").style.display = "block";
 });
 
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
 
-console.log('etape7');
 
 
+console.log('etape8');
