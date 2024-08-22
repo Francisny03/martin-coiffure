@@ -65,6 +65,11 @@ include('include/header.php')
     </div>
 </div>
 
+<div id="image-viewer">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="full-image">
+</div>
+
 
 <?php
 include('include/footer.php')

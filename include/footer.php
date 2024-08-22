@@ -85,7 +85,7 @@
 
 
 <!-- Script form mail -->
-<script>
+<!-- <script>
         document.getElementById('contactForm').addEventListener('submit', function(event) {
             event.preventDefault();
             var formData = new FormData(this);
@@ -110,7 +110,7 @@
                 window.location.href = 'contact.php';
             });
         });
-    </script>
+    </script> -->
 
 <!-- swiper script -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

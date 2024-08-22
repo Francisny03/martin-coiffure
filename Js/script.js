@@ -1,19 +1,24 @@
 console.log('etape1');
+
+const hamburger = document.getElementById('hamburger');
+const menuNav = document.getElementById('menuNav');
+
 hamburger.onclick = () => {
     console.log('etape0');
     hamburger.classList.toggle("open");
-    menu_nav.classList.toggle("menu_nav_slide");
-}
+    menuNav.classList.toggle("menu_nav_slide");
+};
 
 console.log('etape2');
 
 // Fonction pour obtenir le nom de fichier sans l'extension et le chemin
-
 function getCurrentPage() {
     const path = window.location.pathname;
     const page = path.split("/").pop();
     return page.split(".")[0];
 }
+
+
 
 console.log('etape3');
 
@@ -63,5 +68,27 @@ btn.onclick = function () {
 function closePopup() {
     popup.style.display = "none";
 }
+
+
+console.log('etape5');
+
+// image viewer gallery
+document.querySelectorAll(".galerie_view_items img").forEach(function (img) {
+    img.addEventListener("click", function () {
+        document.getElementById("full-image").src = this.src;
+        document.getElementById("image-viewer").style.display = "block";
+    });
+});
+
+
+console.log('etape6');
+
+document.querySelector("#image-viewer .close").addEventListener("click", function () {
+    document.getElementById("image-viewer").style.display = "none";
+});
+
+
+
+console.log('etape7');
 
 

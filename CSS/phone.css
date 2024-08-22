@@ -332,37 +332,24 @@
     }
 
     .popup_content {
-        display: inline-block;
-        background-color: #fefefe;
-        margin: auto;
-        padding: 20px;
-        width: 55%;
-        border-radius: 10px;
+        width: 76%;
+        height: 326px;
     }
 
     .popup_content iframe {
-        border-radius: 10px;
-        min-width: 350px;
-        height: 419px;
+        border-radius: 5px;
+        width: 280px;
+        height: 254px;
     }
 
-
-    /* .open_popup {
+    .open_popup {
         top: 50%;
         transform: translate(-50%, -50%) scale(1);
         visibility: visible;
-      } */
+    }
 
     .popup button {
-        width: 350px;
-        padding: 10px 0;
-        margin-top: 20px;
-        background: var(--font_menu_rect);
-        color: black;
-        border: 0;
-        outline: none;
-        border-radius: 4px;
-        cursor: pointer;
+        width: 282px;
         font-size: 18px;
     }
 
@@ -775,6 +762,14 @@
         object-fit: cover;
         object-position: center;
         display: block;
+    }
+
+    #image-viewer .close {
+        top: 63px;
+    }
+
+    .modal-content {
+        max-width: 250px;
     }
 
 

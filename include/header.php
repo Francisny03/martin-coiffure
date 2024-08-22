@@ -89,7 +89,7 @@
                 </a>
             </div>
 
-            <ul class="menu_nav space" id="menu_nav">
+            <ul class="menu_nav space" id="menuNav">
                 <li class="btn_nav"><a href="index.php">Accueil</a></li>
                 <li class="btn_nav"><a href="service.php">Services</a></li>
                 <li class="btn_nav"><a href="galerie.php">Galerie</a></li>
