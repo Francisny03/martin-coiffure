@@ -57,14 +57,25 @@ include('include/footer.php')
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
     var formData = new FormData(this);
+    // var loading = document.getElementById('loading');
+
+    // Afficher l'élément de chargement
+    // loading.style.display = 'block';
 
     fetch('send-email.php', {
         method: 'POST',
         body: formData
     }).then(response => response.text()).then(data => {
         alert('Message envoyé avec succès!');
+        // Masquer l'élément de chargement
+        // loading.style.display = 'none';
+        window.location.href = 'contact.php';
     }).catch(error => {
+        loading.style.display = 'none';
         alert('Erreur lors de l\'envoi du message.');
+        // Masquer l'élément de chargement
+        // loading.style.display = 'none';
+        window.location.href = 'contact.php';
     });
 });
 </script>
