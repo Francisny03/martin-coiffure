@@ -2,13 +2,13 @@
 include('include/header.php');
 $PDO = getConn();
 
-$req_slider = "SELECT * FROM slider";
+$req_slider = "SELECT * FROM slider ORDER BY position ASC";
 $stmt_slider = $PDO->prepare($req_slider);
 $stmt_slider->execute();
 $result_slider = $stmt_slider->fetchAll();
 
 
-$req_galeries = "SELECT * FROM galeries";
+$req_galeries = "SELECT * FROM galeries ORDER BY position ASC";
 $stmt_galeries = $PDO->prepare($req_galeries);
 $stmt_galeries->execute();
 $result_galeries = $stmt_galeries->fetchAll();
@@ -19,14 +19,6 @@ $stmt_idgalerie = $PDO->prepare($req_idgalerie);
 $stmt_idgalerie->bindParam(':id_galerie', $id_galerie, PDO::PARAM_INT);
 $stmt_idgalerie->execute();
 $result_idgalerie = $stmt_idgalerie->fetchAll();
-
-
-// $req_display_service = "SELECT dis.*, services.id, services.titre, services.image1, services.image2 
-// FROM display_service dis
-// LEFT JOIN services ON dis.id_services = services.id ";
-// $stmt_display_services = $PDO->prepare($req_display_service);
-// $stmt_display_services->execute();
-// $result_display_services = $stmt_display_services->fetchAll();
 
 $req_services = "SELECT * FROM services ORDER BY position ASC";
 $stmt_service = $PDO->prepare(query:$req_services);
