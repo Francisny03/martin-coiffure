@@ -24,9 +24,9 @@ include('include/header.php')
             <img src="Images/contact-pic2.jpg" alt="">
         </div>
         <div class="write_right">
-            <div class="write_text">
-                <p>Ecrivez-vous</p>
-            </div>
+                <div class="write_text">
+                    <p>Ecrivez-vous</p>
+                </div>
             <form id="contactForm">
                 <div class="write_rect">
                     <input class="prenom" type="text" name="prenom" id="nom" placeholder="Nom & Prénom" required>

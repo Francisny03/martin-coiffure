@@ -1,56 +1,63 @@
 <?php
-include('include/header.php')
+include('include/header.php');
+$PDO = getConn();
+
+$req_slider = "SELECT * FROM slider";
+$stmt_slider = $PDO->prepare($req_slider);
+$stmt_slider->execute();
+$result_slider = $stmt_slider->fetchAll();
+
+
+$req_galeries = "SELECT * FROM galeries";
+$stmt_galeries = $PDO->prepare($req_galeries);
+$stmt_galeries->execute();
+$result_galeries = $stmt_galeries->fetchAll();
+
+$id_galerie = 7;
+$req_idgalerie = "SELECT images FROM galeries WHERE id_galerie = :id_galerie";
+$stmt_idgalerie = $PDO->prepare($req_idgalerie);
+$stmt_idgalerie->bindParam(':id_galerie', $id_galerie, PDO::PARAM_INT);
+$stmt_idgalerie->execute();
+$result_idgalerie = $stmt_idgalerie->fetchAll();
+
+
+// $req_display_service = "SELECT dis.*, services.id, services.titre, services.image1, services.image2 
+// FROM display_service dis
+// LEFT JOIN services ON dis.id_services = services.id ";
+// $stmt_display_services = $PDO->prepare($req_display_service);
+// $stmt_display_services->execute();
+// $result_display_services = $stmt_display_services->fetchAll();
+
+$req_services = "SELECT * FROM services ORDER BY position ASC";
+$stmt_service = $PDO->prepare(query:$req_services);
+$stmt_service->execute();
+$result_services = $stmt_service->fetchAll();
+
 ?>
+
+
 
 <!-- Slider main container -->
 <div class="swiper space_bottom">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
-        <!-- Slides -->
+        <?php
+            foreach($result_slider as $results_sliders){
+            ?>
         <div class="swiper-slide">
             <div class="slide_image">
-                <img src="Images/slider_1.webp" alt="">
+                <img src="login/<?php echo $results_sliders["image"] ?>" alt="">
             </div>
             <div class="slide_filter">
                 <div class="slide-text">
-                    <h1>Vous êtes la bienvenue au salon Martin Coiffure</h1>
-                    <h3>Laissez nos experts vous offrir une expérience de coiffure personnalisée...</h3>
+                    <h1><?php echo $results_sliders["titre"] ?></h1>
+                    <h3><?php echo $results_sliders["description"] ?></h3>
                 </div>
             </div>
         </div>
-        <div class="swiper-slide">
-            <div class="slide_image">
-                <img src="Images/slider_2.webp" alt="">
-            </div>
-            <div class="slide_filter">
-                <div class="slide-text">
-                    <h1>Vous êtes la bienvenue au salon Martin Coiffure</h1>
-                    <h3>Laissez nos experts vous offrir une expérience de coiffure personnalisée...</h3>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="slide_image">
-                <img src="Images/slider_3.webp" alt="">
-            </div>
-            <div class="slide_filter">
-                <div class="slide-text">
-                    <h1>Vous êtes la bienvenue au salon Martin Coiffure</h1>
-                    <h3>Laissez nos experts vous offrir une expérience de coiffure personnalisée...</h3>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <div class="slide_image">
-                <img src="Images/slider_4.webp" alt="">
-            </div>
-            <div class="slide_filter">
-                <div class="slide-text">
-                    <h1>Vous êtes la bienvenue au salon Martin Coiffure</h1>
-                    <h3>Laissez nos experts vous offrir une expérience de coiffure personnalisée...</h3>
-                </div>
-            </div>
-        </div>
+        <?php
+            }
+?>
     </div>
 
 
@@ -76,126 +83,31 @@ include('include/header.php')
     </a>
     <br>
     <div class="all_services">
+
         <div class="text wow animate__animated animate__fadeInUp animated nos_services_item">
+            <?php
+            foreach($result_services as $result_service){
+            ?>
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <div class="flip-card-front-image">
-                            <img src="Images/coiffure.webp" alt="Avatar">
+                            <img src="login/<?php echo $result_service["image1"] ?>" alt="">
                         </div>
                         <div class="flip-card-front-filter">
                             <div class="flip-card-front-text">
-                                <p>Coiffure dame</p>
+                                <p><?php echo $result_service["titre"] ?></p>
                             </div>
                         </div>
                     </div>
                     <div class="flip-card-back">
-                        <img src="Images/coiffure2.jpg" alt="">
+                        <img src="login/<?php echo $result_service["image2"] ?>" alt="">
                     </div>
                 </div>
             </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <div class="flip-card-front-image">
-                            <img src="Images/formation.webp" alt="Avatar">
-                        </div>
-                        <div class="flip-card-front-filter">
-                            <div class="flip-card-front-text">
-                                <p>Centre de formation</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card-back">
-                        <img src="Images/formation2.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <div class="flip-card-front-image">
-                            <img src="Images/decoration.webp" alt="Avatar">
-                        </div>
-                        <div class="flip-card-front-filter">
-                            <div class="flip-card-front-text">
-                                <p>Décoration de voitures</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card-back">
-                        <img src="Images/decoration2.webp" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <div class="flip-card-front-image">
-                            <img src="Images/makeup.webp" alt="Avatar">
-                        </div>
-                        <div class="flip-card-front-filter">
-                            <div class="flip-card-front-text">
-                                <p>Make-up</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card-back">
-                        <img src="Images/makeup2.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <div class="flip-card-front-image">
-                            <img src="Images/manucure.png" alt="Avatar">
-                        </div>
-                        <div class="flip-card-front-filter">
-                            <div class="flip-card-front-text">
-                                <p>Manucure & Pédicure</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card-back">
-                        <img src="Images/manucure.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <div class="flip-card-front-image">
-                            <img src="Images/perruque.jpeg" alt="Avatar">
-                        </div>
-                        <div class="flip-card-front-filter">
-                            <div class="flip-card-front-text">
-                                <p>Confection de perruques</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card-back">
-                        <img src="Images/perruque2.webp" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <div class="flip-card-front-image">
-                            <img src="Images/coloration.jpg" alt="Avatar">
-                        </div>
-                        <div class="flip-card-front-filter">
-                            <div class="flip-card-front-text">
-                                <p>Coloration capillaire</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card-back">
-                        <img src="Images/coloration2.jpg" alt="">
-                    </div>
-                </div>
-            </div>
+            <?php
+            }
+        ?>
         </div>
 
     </div>
@@ -215,78 +127,26 @@ include('include/header.php')
     <br>
     <div class="all_services">
         <div class="text wow animate__animated animate__fadeInUp animated nos_services_item">
+            <?php
+            foreach($result_galeries as $results_galeries){
+            ?>
             <div class="realisation">
-                <div class="realisation_photo">
-                    <img src="Images/real1.webp" alt="">
-                </div>
-                <div class="rectangle_noir">
-                    <div class="rect_noir_text">
-                        <p>
-                            Tissage bouclé
-                        </p>
+                <a href="galerie_view.php?id=<?php echo $results_galeries["id_galerie"] ?>">
+                    <div class="realisation_photo">
+                        <img src="login/<?php echo $results_galeries["image"] ?>" alt="">
                     </div>
-                </div>
-            </div>
-            <div class="realisation">
-                <div class="realisation_photo">
-                    <img src="Images/real2.webp" alt="">
-                </div>
-                <div class="rectangle_noir">
-                    <div class="rect_noir_text">
-                        <p>
-                            Tissage bouclé
-                        </p>
+                    <div class="rectangle_noir">
+                        <div class="rect_noir_text">
+                            <p>
+                                <?php echo $results_galeries["titre"] ?>
+                            </p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="realisation">
-                <div class="realisation_photo">
-                    <img src="Images/real3.webp" alt="">
-                </div>
-                <div class="rectangle_noir">
-                    <div class="rect_noir_text">
-                        <p>
-                            Tissage bouclé
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="realisation">
-                <div class="realisation_photo">
-                    <img src="Images/real4.webp" alt="">
-                </div>
-                <div class="rectangle_noir">
-                    <div class="rect_noir_text">
-                        <p>
-                            Tissage bouclé
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="realisation">
-                <div class="realisation_photo">
-                    <img src="Images/real5.webp" alt="">
-                </div>
-                <div class="rectangle_noir">
-                    <div class="rect_noir_text">
-                        <p>
-                            Tissage bouclé
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="realisation">
-                <div class="realisation_photo">
-                    <img src="Images/real6.webp" alt="">
-                </div>
-                <div class="rectangle_noir">
-                    <div class="rect_noir_text">
-                        <p>
-                            Tissage bouclé
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <?php
+            }
+        ?>
         </div>
     </div>
 </div>
@@ -324,7 +184,6 @@ include('include/header.php')
                 </div>
                 <!-- <button type="button"><a href="https://www.youtube.com/@martincoiffure9082">Visiter notre chaîne
                         Youtube</a></button> -->
-
             </div>
         </div>
     </div>
@@ -333,22 +192,18 @@ include('include/header.php')
 
 <div class="text wow animate__animated animate__fadeInUp animated galerie space space_bottom">
     <div class="galerie_photo">
-        <img src="Images/real1.webp" alt="">
-    </div>
-    <div class="galerie_photo">
-        <img src="Images/real1.webp" alt="">
-    </div>
-    <div class="galerie_photo">
-        <img src="Images/real1.webp" alt="">
-    </div>
-    <div class="galerie_photo">
-        <img src="Images/real1.webp" alt="">
-    </div>
-    <div class="galerie_photo">
-        <img src="Images/real1.webp" alt="">
-    </div>
-    <div class="galerie_photo">
-        <img src="Images/real1.webp" alt="">
+        <?php
+    foreach ($result_idgalerie as $result_idgaleries) {
+        $galerieImages = json_decode($result_idgaleries["images"]);
+        if (is_array($galerieImages)) {  // Check if decoding was successful
+            foreach ($galerieImages as $imgs) {
+                echo '<img src="login/' . htmlspecialchars($imgs, ENT_QUOTES, 'UTF-8') . '" alt="Image supplémentaire"> ';
+            }
+        } else {
+            echo "No additional images available";
+        }
+    }
+    ?>
     </div>
 </div>
 
