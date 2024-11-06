@@ -81,11 +81,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
 console.log('etape6');
 
 document.getElementById("myBtn").addEventListener("click", function () {
     document.getElementById("popup").style.display = "block";
 });
+
+
 
 function closePopup() {
     document.getElementById("popup").style.display = "none";

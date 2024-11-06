@@ -1,6 +1,13 @@
 <?php
-include('include/header.php')
+include('include/header.php');
+$PDO = getConn();
+$req_services = "SELECT * FROM services ORDER BY position ASC";
+$stmt_service = $PDO->prepare(query:$req_services);
+$stmt_service->execute();
+$result_services = $stmt_service->fetchAll();
 ?>
+
+
 
 <div class="slide_service_galerie slide_service space_bottom">
     <div class="slide_filter_service">
@@ -17,69 +24,20 @@ include('include/header.php')
 </div>
 
 <div class="service_page_all">
+    <?php
+            foreach($result_services as $result_service){
+            ?>
     <div class="service_page_items">
-        <img src="Images/real8.webp" alt="">
+        <img src="login/<?php echo $result_service["image2"] ?>" alt="">
         <div class="service_page_items_text">
-            <h1> Coiffure dame</h1>
-            <p>Sublimez votre beauté naturelle avec nos coiffures élégantes
-                et tendances. Nos stylistes professionnels sont à votre écoute.
+            <h1><?php echo $result_service["titre"] ?></h1>
+            <p><?php echo $result_service["description"] ?>
             </p>
         </div>
     </div>
-    <div class="service_page_items">
-        <img src="Images/formation2.jpg" alt="">
-        <div class="service_page_items_text">
-            <h1> Centre de formation</h1>
-            <p>Devenez un expert de la beauté avec notre centre de formation. 
-                Nous proposons des cours intensifs et pratiques.
-            </p>
-        </div>
-    </div>
-    <div class="service_page_items">
-        <img src="Images/decoration2.webp" alt="">
-        <div class="service_page_items_text">
-            <h1> Décoration de voitures</h1>
-            <p>Pour vos événements spéciaux, offrez-vous une décoration de 
-                voiture unique et personnalisée.
-            </p>
-        </div>
-    </div>
-    <div class="service_page_items">
-        <img src="Images/makeup2.jpg" alt="">
-        <div class="service_page_items_text">
-            <h1> Make-up</h1>
-            <p>"Révélez votre éclat avec notre service de maquillage professionnel. 
-                Que ce soit pour un événement ou une séance photo...
-            </p>
-        </div>
-    </div>
-    <div class="service_page_items">
-        <img src="Images/manucure.png" alt="">
-        <div class="service_page_items_text">
-            <h1> Manucure & Pédicure</h1>
-            <p>Prenez soin de vos mains et pieds avec nos soins de manucure et 
-                pédicure de qualité. Profitez d'un moment de détente...
-            </p>
-        </div>
-    </div>
-    <div class="service_page_items">
-        <img src="Images/perruque2.webp" alt="">
-        <div class="service_page_items_text">
-            <h1> Confection de perruques</h1>
-            <p>Obtenez une perruque sur mesure qui s'adapte parfaitement à votre style
-                et vos besoins. 
-            </p>
-        </div>
-    </div>
-    <div class="service_page_items">
-        <img src="Images/coloration3.png" alt="">
-        <div class="service_page_items_text">
-            <h1> Coloration capillaire</h1>
-            <p>Changez de look avec nos services de coloration capillaire. 
-                Nos coloristes professionnels utilisent des produits de haute qualité
-            </p>
-        </div>
-    </div>
+    <?php
+            }
+        ?>
 </div>
 
 
