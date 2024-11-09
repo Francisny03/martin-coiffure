@@ -1,33 +1,29 @@
 <?php
 include('include/header.php');
-$PDO = getConn();
 
 $req_slider = "SELECT * FROM slider ORDER BY position ASC";
-$stmt_slider = $PDO->prepare($req_slider);
+$stmt_slider = $conn->prepare($req_slider);
 $stmt_slider->execute();
 $result_slider = $stmt_slider->fetchAll();
 
-
 $req_galeries = "SELECT * FROM galeries ORDER BY position ASC";
-$stmt_galeries = $PDO->prepare($req_galeries);
+$stmt_galeries = $conn->prepare($req_galeries);
 $stmt_galeries->execute();
 $result_galeries = $stmt_galeries->fetchAll();
 
 $id_galerie = 7;
 $req_idgalerie = "SELECT images FROM galeries WHERE id_galerie = :id_galerie";
-$stmt_idgalerie = $PDO->prepare($req_idgalerie);
+$stmt_idgalerie = $conn->prepare($req_idgalerie);
 $stmt_idgalerie->bindParam(':id_galerie', $id_galerie, PDO::PARAM_INT);
 $stmt_idgalerie->execute();
 $result_idgalerie = $stmt_idgalerie->fetchAll();
 
 $req_services = "SELECT * FROM services ORDER BY position ASC";
-$stmt_service = $PDO->prepare(query:$req_services);
+$stmt_service = $conn->prepare(query:$req_services);
 $stmt_service->execute();
 $result_services = $stmt_service->fetchAll();
 
 ?>
-
-
 
 <!-- Slider main container -->
 <div class="swiper space_bottom">
@@ -51,7 +47,6 @@ $result_services = $stmt_service->fetchAll();
             }
 ?>
     </div>
-
 
     <!-- If we need pagination -->
     <!-- <div class="swiper-pagination"></div> -->
@@ -106,7 +101,6 @@ $result_services = $stmt_service->fetchAll();
 
 </div>
 
-
 <div class="nos_services_bloc space space_bottom">
     <a href="galerie.php">
         <div class="text wow animate__animated animate__fadeInUp animated nos_services_title arrow">
@@ -142,7 +136,6 @@ $result_services = $stmt_service->fetchAll();
         </div>
     </div>
 </div>
-
 
 <div class=" nos_services_bloc space">
     <a href="galerie.php">
@@ -199,7 +192,6 @@ $result_services = $stmt_service->fetchAll();
     </div>
 </div>
 
-
 <div class="nos_services_bloc space" id="about">
     <div class="nos_services_title arrow">
         <p class="form_bf_title service_title space text wow animate__animated animate__fadeInUp animated">
@@ -235,7 +227,6 @@ $result_services = $stmt_service->fetchAll();
         </p>
     </div>
 </fieldset>
-
 <!--  -->
 
 <?php

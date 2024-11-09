@@ -1,13 +1,11 @@
 <?php
 include('include/header.php');
-$PDO = getConn();
+
 $req_services = "SELECT * FROM services ORDER BY position ASC";
-$stmt_service = $PDO->prepare(query:$req_services);
+$stmt_service = $conn->prepare(query:$req_services);
 $stmt_service->execute();
 $result_services = $stmt_service->fetchAll();
 ?>
-
-
 
 <div class="slide_service_galerie slide_service space_bottom">
     <div class="slide_filter_service">
@@ -39,12 +37,6 @@ $result_services = $stmt_service->fetchAll();
             }
         ?>
 </div>
-
-
-
-
-
-
 
 <?php
 include('include/footer.php')

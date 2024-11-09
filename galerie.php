@@ -1,13 +1,10 @@
 <?php
 include('include/header.php');
-$PDO = getConn();
 
 $req_galeries = "SELECT * FROM galeries ORDER BY position ASC";
-$stmt_galeries = $PDO->prepare($req_galeries);
+$stmt_galeries = $conn->prepare($req_galeries);
 $stmt_galeries->execute();
 $result_galeries = $stmt_galeries->fetchAll();
-
-
 ?>
 
 <div class="slide_service_galerie slide_galerie space_bottom">
@@ -59,10 +56,6 @@ $result_galeries = $stmt_galeries->fetchAll();
     </a>
     <?php endforeach; ?>
 </div>
-
-
-
-
 
 <?php
 include('include/footer.php')

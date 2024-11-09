@@ -527,6 +527,11 @@ header {
   gap: 30px;
 }
 
+.galerie_photo {
+  display: flex;
+  gap: 10px;
+}
+
 .galerie_photo img {
   width: 260px;
   height: 350px;
